@@ -191,6 +191,12 @@
     "/bit/rszhaopin": [
         "nczitzk"
     ],
+    "/bitbucket/commits/:workspace/:repo_slug": [
+        "AuroraDysis"
+    ],
+    "/bitbucket/tags/:workspace/:repo_slug": [
+        "AuroraDysis"
+    ],
     "/bitmovin/blog": [
         "elxy"
     ],
@@ -255,6 +261,15 @@
     ],
     "/chaoxing/qk/:id/:needContent?": [
         "nczitzk"
+    ],
+    "/chaping/banner": [
+        "nczitzk"
+    ],
+    "/chaping/news/:caty?": [
+        "nczitzk"
+    ],
+    "/chaping/newsflash": [
+        "Fatpandac"
     ],
     "/ciidbnu/:id?": [
         "nczitzk"
@@ -658,6 +673,18 @@
     "/gov/mee/ywdt?": [
         "liuxsdev"
     ],
+    "/gov/pbc/goutongjiaoliu": [
+        "nczitzk"
+    ],
+    "/gov/pbc/tradeAnnouncement": [
+        "nczitzk"
+    ],
+    "/gov/pbc/zcyj": [
+        "Fatpandac"
+    ],
+    "/gov/pbc/gzlw": [
+        "Fatpandac"
+    ],
     "/guduodata/daily": [
         "Gem1ni"
     ],
@@ -791,6 +818,10 @@
         "luyuhuang"
     ],
     "/iwara/users/:username?/:type?": [
+        "Fatpandac"
+    ],
+    "/ixigua/ixigua/user/video/:uid/:disableEmbed?": [
+        "FlashWingShadow",
         "Fatpandac"
     ],
     "/jandan/:category?": [
@@ -1249,6 +1280,9 @@
     "/radio-canada/latest/:language?": [
         "nczitzk"
     ],
+    "/rfa/:language?/:channel?/:subChannel?": [
+        "zphw"
+    ],
     "/rfi/news": [
         "nczitzk"
     ],
@@ -1576,6 +1610,9 @@
     ],
     "/wikinews/latest": [
         "KotoriK"
+    ],
+    "/wp-china/news/:category?": [
+        "nczitzk"
     ],
     "/wsj/:lang/:category?": [
         "oppilate"
@@ -2932,8 +2969,6 @@
     "/fzdm/manhua/:id": [],
     "/aljazeera/news": [],
     "/cfd/gbp_div": [],
-    "/pbc/goutongjiaoliu": [],
-    "/pbc/tradeAnnouncement": [],
     "/monotype/article": [],
     "/stork/keyword/:trackID/:displayKey": [],
     "/zhutix/latest": [],
@@ -3076,8 +3111,6 @@
     "/chuhaibiji": [],
     "/blogs/jianning": [],
     "/hudongba/:city/:id": [],
-    "/chaping/banner": [],
-    "/chaping/news/:caty?": [],
     "/feixuew/:id?": [],
     "/1x/:category?": [],
     "/jx3/:caty?": [],
@@ -3197,7 +3230,6 @@
     "/yinxiang/card/:id": [],
     "/yinxiang/personal/:id": [],
     "/yinxiang/category/:id": [],
-    "/ixigua/user/video/:uid/:disableEmbed?": [],
     "/gvm/index/:category?": [],
     "/chuapp/index/:category?": [],
     "/deloitte/industries/:category?": [],
@@ -3262,7 +3294,6 @@
     "/ngd/:slug?": [],
     "/simpread/notice": [],
     "/simpread/changelog": [],
-    "/rfa/:language?/:channel?/:subChannel?": [],
     "/booth.pm/shop/:subdomain": [],
     "/feed-the-beast/modpack/:modpackEntry": [],
     "/gab/user/:username": [],
