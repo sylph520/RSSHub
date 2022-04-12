@@ -827,6 +827,16 @@ Type 栏目：
 
 <Route author="nczitzk" example="/pts/dailynews" path="/pts/dailynews"/>
 
+## 共同网
+
+### 最新报道
+
+<Route author="Rongronggg9" example="/kyodonews" path="/kyodonews/:language?/:keyword?" :paramsDesc="['语言: `china` = 简体中文 (默认), `tchina` = 繁體中文', '关键词']">  
+
+`keyword` 为关键词，由于共同网有许多关键词并不在主页列出，此处不一一列举，可从关键词页的 URL 的最后一级路径中提取。如 `日中关系` 的关键词页 URL 为 `https://china.kyodonews.net/news/japan-china_relationship`, 则将 `japan-china_relationship` 填入 `keyword`。特别地，当填入 `rss` 时，将从共同网官方 RSS 中抓取文章；略去时，将从首页抓取最新报道 (注意：首页更新可能比官方 RSS 稍慢)。
+
+</Route>
+
 ## 国际金融报栏目
 
 ### 栏目
@@ -834,6 +844,65 @@ Type 栏目：
 <Route author="Origami404" example="/ifnews/48" path="/ifnews/:cid" :paramsDesc="['栏目 ID']">
 
 `cid`可在对应栏目的 url 后的参数中获取，如`热点快报`的栏目 url 为`http://www.ifnews.com/column.html?cid=48`, `cid`即为`48`.
+
+</Route>
+
+## 衡阳全搜索
+
+### 衡阳日报
+
+<Route author="nczitzk" example="/hyqss/hyrb" path="/hyqss/hyrb/:id?" :paramsDesc="['编号，见下表，默认为全部']">
+
+| 版           | 编号 |
+| ----------- | -- |
+| 全部          |    |
+| 第 A01 版：版面一 | 1  |
+| 第 A02 版：版面二 | 2  |
+| 第 A03 版：版面三 | 3  |
+| 第 A04 版：版面四 | 4  |
+| 第 A05 版：版面五 | 5  |
+| 第 A06 版：版面六 | 6  |
+| 第 A07 版：版面七 | 7  |
+| 第 A08 版：版面八 | 8  |
+
+</Route>
+
+### 衡阳晚报
+
+<Route author="nczitzk" example="/hyqss/hywb" path="/hyqss/hywb/:id?" :paramsDesc="['编号，见下表，默认为全部']">
+
+| 版           | 编号 |
+| ----------- | -- |
+| 全部          |    |
+| 第 A01 版：版面一 | 1  |
+| 第 A02 版：版面二 | 2  |
+| 第 A03 版：版面三 | 3  |
+| 第 A04 版：版面四 | 4  |
+| 第 A05 版：版面五 | 5  |
+| 第 A06 版：版面六 | 6  |
+| 第 A07 版：版面七 | 7  |
+| 第 A08 版：版面八 | 8  |
+
+</Route>
+
+## 湖南日报
+
+### 电子刊物
+
+<Route author="nczitzk" example="/hnrb" path="/hnrb/:id?" :paramsDesc="['编号，见下表，默认为全部']" anticrawler="1">
+
+| 版            | 编号 |
+| ------------ | -- |
+| 全部           |    |
+| 第 01 版：头版    | 1  |
+| 第 02 版：要闻    | 2  |
+| 第 03 版：要闻    | 3  |
+| 第 04 版：深度    | 4  |
+| 第 05 版：市州    | 5  |
+| 第 06 版：理论・学习 | 6  |
+| 第 07 版：观察    | 7  |
+| 第 08 版：时事    | 8  |
+| 第 09 版：中缝    | 9  |
 
 </Route>
 
@@ -1144,10 +1213,21 @@ category 对应的关键词有
 
 </Route>
 
+### 作者新闻
+
+<Route author="kevinschaul" example="/nytimes/author/farhad-manjoo" path="/nytimes/author/:byline" :paramsDesc="['Author’s name in New York Times’ URL format']">
+
+提供指定作者的所有文章。
+
+</Route>
+
 ### 新闻简报
 
-<Route author="yueyericardo" example="/nytimes/daily_briefing_chinese" path="/nytimes/daily_briefing_chinese"/>
+<Route author="yueyericardo" example="/nytimes/daily_briefing_chinese" path="/nytimes/daily_briefing_chinese">
+
 网站地址：<https://www.nytimes.com/zh-hans/series/daily-briefing-chinese/>
+
+</Route>
 
 ### 畅销书排行榜
 
@@ -1175,7 +1255,7 @@ category 对应的关键词有
 
 ### 频道
 
-<Route author="xyqfer nczitzk" example="/thepaper/channel/27224" path="/thepaper/channel/:id" :paramsDesc="['频道 id，可在频道页 URL 中找到']">
+<Route author="xyqfer nczitzk" example="/thepaper/channel/25950" path="/thepaper/channel/:id" :paramsDesc="['频道 id，可在频道页 URL 中找到']">
 
 | 视频    | 时事    | 财经    | 思想    | 澎湃号   | 生活    |
 | ----- | ----- | ----- | ----- | ----- | ----- |
@@ -1186,6 +1266,10 @@ category 对应的关键词有
 ### 列表
 
 <Route author="nczitzk" example="/thepaper/list/25457" path="/thepaper/list/:id" :paramsDesc="['列表 id，可在列表页 URL 中找到']"/>
+
+### 明查
+
+<Route author="nczitzk" example="/thepaper/factpaper" path="/thepaper/factpaper/:status?" :paramsDesc="['状态 id，可选 `1` 即 有定论 或 `0` 即 核查中，默认为 `1`']"/>
 
 ### 澎湃美数组作品集
 

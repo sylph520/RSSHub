@@ -269,6 +269,12 @@ Refer to [#minecraft](/en/game.html#minecraft)
 
 见 [#nintendo](/game.html#nintendo)
 
+## NPM
+
+### Package
+
+<RouteEn author="Fatpandac" example="/npm/package/rsshub" path="/npm/package/:name" :paramsDesc="['Package name']"/>
+
 ## Nvidia Web Driver
 
 ### Changelog
@@ -298,6 +304,12 @@ Refer to [#minecraft](/en/game.html#minecraft)
 | ko     | zh_CN       | zh_TW       | en      | uk         | ru      | pl     |
 
 </RouteEn>
+
+## qBittorrent
+
+### News
+
+<RouteEn author="TonyRL" example="/qbittorrent/news" path="/qbittorrent/news" radar="1" rssbud="1"/>
 
 ## QNAP
 

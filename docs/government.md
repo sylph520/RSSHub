@@ -4,6 +4,22 @@ pageClass: routes
 
 # 政务消息
 
+## 安徽省科技厅
+
+### 科技资讯 & 科技资源
+
+<Route author="nczitzk" example="/gov/anhui/kjt/kjzx/tzgg" path="/gov/anhui/kjt/:path?" :paramsDesc="['路径，默认为通知公告']">
+
+::: tip 提示
+
+路径处填写对应页面 URL 中 `http://kjt.ah.gov.cn/` 和 `/index.html` 之间的字段。下面是一个例子。
+
+若订阅 [通知公告](http://kjt.ah.gov.cn/kjzx/tzgg/index.html) 则将对应页面 URL <http://kjt.ah.gov.cn/kjzx/tzgg/index.html> 中 `http://kjt.ah.gov.cn/` 和 `/index.html` 之间的字段 `kjzx/tzgg` 作为路径填入。此时路由为 [`/gov/anhui/kjt/kjzx/tzgg`](https://rsshub.app/gov/anhui/kjt/kjzx/tzgg)
+
+:::
+
+</Route>
+
 ## 澳门廉政公署
 
 ### 最新消息
@@ -80,7 +96,7 @@ pageClass: routes
 
 ### 德阳市政府公开信息
 
-<Route author="zytomorrow" example="/gov/sichuan/deyang/govpulicinfo/德阳市市/市人社局" path="/gov/sichuan/deyang/govpulicinfo/:countyName/:institutionName?" :paramsDesc="['区县名。德阳市、绵竹市、广汉市、什邡市、中江县、罗江区、旌阳区、高新区', '单位名称。可直接输入网页显示单位名称']"/>
+<Route author="zytomorrow" example="/gov/sichuan/deyang/govpulicinfo/绵竹市" path="/gov/sichuan/deyang/govpulicinfo/:countyName" :paramsDesc="['区县名（**其他区县整改中，暂时只支持`绵竹市`**）。德阳市、绵竹市、广汉市、什邡市、中江县、罗江区、旌阳区、高新区']"/>
 
 ## 广东省人民政府
 
@@ -974,9 +990,23 @@ pageClass: routes
 
 ## 中华人民共和国外交部
 
-### 发言人表态
+### 外交动态
 
-<Route author="nicolaszf" example="/gov/fmprc/fyrbt" path="/gov/fmprc/fyrbt"/>
+<Route author="nczitzk" example="/gov/mfa/wjdt/fyrbt" path="/gov/mfa/wjdt/:category?" :paramsDesc="['分类，见下表，默认为领导人活动']">
+
+| 分类    | category |
+| ----- | -------- |
+| 领导人活动 | gjldrhd  |
+| 外事日程  | wsrc     |
+| 部领导活动 | wjbxw    |
+| 业务动态  | sjxw     |
+| 发言人表态 | fyrbt    |
+| 吹风会   | cfhsl    |
+| 大使任免  | dsrm     |
+| 驻外报道  | zwbd     |
+| 政策解读  | zcjd     |
+
+</Route>
 
 ## 中华人民共和国住房和城乡建设部
 
